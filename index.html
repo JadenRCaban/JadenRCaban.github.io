@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phenom Forever</title>
-    <style>
-        /* Add your CSS styles here */
+    <title>Music Label Website</title><style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
         header, footer {
-            background-color: #FFD700;
-            color: #0000;
+            background-color: #333;
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
@@ -21,19 +19,78 @@
         main {
             padding: 20px;
         }
+
+        .artist {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Music</h1>
+        <h1>Awesome Music Label</h1>
     </header>
 
     <main>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is a simple example of an HTML website. Customize it to meet your needs.</p>
+
+        <div class="artist">
+            <h2>Artist 1: John Doe</h2>
+            <p>Description of Artist 1.</p>
+            <audio controls>
+                <source src="audio/artist1_track1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <div class="artist">
+            <h2>Artist 2: Jane Smith</h2>
+            <p>Description of Artist 2.</p>
+            <audio controls>
+                <source src="audio/artist2_track1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <div class="artist">
+            <h2>Artist 3: Alex Johnson</h2>
+            <p>Description of Artist 3.</p>
+            <audio controls>
+                <source src="audio/artist3_track1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <div class="artist">
+            <h2>Artist 4: Sarah Davis</h2>
+            <p>Description of Artist 4.</p>
+            <audio controls>
+                <source src="audio/artist4_track1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <div class="artist">
+            <h2>Artist 5: Michael Brown</h2>
+            <p>Description of Artist 5.</p>
+            <audio controls>
+                <source src="audio/artist5_track1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Phenom Forever. All rights reserved.</p>
+        <p>&copy; 2023 Awesome Music Label. All rights reserved.</p>
     </footer>
-</body></html>
+
+</body>
+</html>
