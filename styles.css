@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     text-align: center;
     margin: 20px;
 }
 
 h1 {
-    color: #333;
+    color: #ffd00f;
 }
 
 #music-list {
