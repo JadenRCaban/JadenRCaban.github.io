@@ -16,6 +16,13 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            position: relative;
+        }
+
+        #logo-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
         main {
@@ -28,7 +35,6 @@
 
         .buttons-container {
             text-align: center;
-            margin-top: 20px;
         }
 
         .button {
@@ -53,12 +59,11 @@
 
     <header>
         <h1>Phenom Forever</h1>
-    </header>
-
-    <main>
-        <!-- 3D Logo Canvas -->
-        <div id="logo-container"></div>
-
+        <!-- Logo Container -->
+        <div id="logo-container">
+            <img src="path/to/your/logo.png" alt="Logo" width="50" height="50">
+        </div>
+    </header> <main>
         <!-- Buttons Container -->
         <div class="buttons-container">
             <!-- Button for Artists Page -->
@@ -67,39 +72,5 @@
             <!-- Button for News Page -->
             <a class="button" href="news.html">News</a>
         </div>
-    </main>
-
-    <!-- Include Three.js library -->
-    <script src="https://threejs.org/build/three.js"></script>
-
-    <script>
-        // Three.js code for the 3D spinning object
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById('logo-container').appendChild(renderer.domElement);
-        
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        const cube = new THREE.Mesh(geometry, material);
-
-        scene.add(cube);
-
-        camera.position.z = 5;
-
-        const animate = function () {
-            requestAnimationFrame(animate);
-
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-
-            renderer.render(scene, camera);
-        };
-
-        animate();
-    </script>
-
-</body>
+    </main></body>
 </html>
