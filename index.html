@@ -9,7 +9,9 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             overflow: hidden; /* Prevents scrolling on the canvas */
-        }        header {
+        }
+
+        header {
             background-color: #333;
             color: #fff;
             padding: 10px;
@@ -24,7 +26,9 @@
             height: 100vh;
         }
 
-        .buttons-container { text-align: center;
+        .buttons-container {
+            text-align: center;
+            margin-top: 20px;
         }
 
         .button {
@@ -51,7 +55,11 @@
         <h1>Phenom Forever</h1>
     </header>
 
-    <main>    <!-- Buttons Container -->
+    <main>
+        <!-- 3D Logo Canvas -->
+        <div id="logo-container"></div>
+
+        <!-- Buttons Container -->
         <div class="buttons-container">
             <!-- Button for Artists Page -->
             <a class="button" href="artists.html">Artists</a>
@@ -61,4 +69,37 @@
         </div>
     </main>
 
-</body></html>
+    <!-- Include Three.js library -->
+    <script src="https://threejs.org/build/three.js"></script>
+
+    <script>
+        // Three.js code for the 3D spinning object
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('logo-container').appendChild(renderer.domElement);
+        
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cube = new THREE.Mesh(geometry, material);
+
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        const animate = function () {
+            requestAnimationFrame(animate);
+
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+    </script>
+
+</body>
+</html>
