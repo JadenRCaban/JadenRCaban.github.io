@@ -211,4 +211,83 @@
 </body></html>
 <pre>
 
+- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phenom Forever</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling on the canvas */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        #logo-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .buttons-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Phenom Forever</h1>
+        <!-- Logo Container -->
+        <div id="logo-container">
+            <img src="/Users/jadencaban/Documents/GitHub/JadenRCaban.github.io/images" alt="Logo" width="50" height="50">
+        </div>
+    </header> <main>
+        <!-- Buttons Container -->
+        <div class="buttons-container">
+            <!-- Button for Artists Page -->
+            <a class="button" href="artists.html">Artists</a>
+            
+            <!-- Button for News Page -->
+            <a class="button" href="news.html">News</a>
+        </div>
+    </main>
+</body>
+</html>
+<pre>
+
 - 
