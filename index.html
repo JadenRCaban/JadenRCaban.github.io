@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +20,17 @@
             position: relative;
         }
 
-        #logo-container {
+        #logo-container-left,
+        #logo-container-right {
             position: absolute;
             top: 10px;
+        }
+
+        #logo-container-left {
+            left: 10px;
+        }
+
+        #logo-container-right {
             right: 10px;
         }
 
@@ -53,24 +62,57 @@
         .button:hover {
             background-color: #ffcc00;
         }
+
+        #social-media-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #social-media-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Phenom Forever</h1>
-        <!-- Logo Container -->
-        <div id="logo-container">
-            <img src="images/Phenom Forever Logo Main.PNG" alt="Logo" width="50" height="50">
+        <!-- Logo Container - Top Left -->
+        <div id="logo-container-left">
+            <img src="images/pfprod.png" alt="Logo" width="80" height="80">
         </div>
-    </header> <main>
+
+        <h1>Phenom Forever</h1>
+
+        <!-- Logo Container - Top Right -->
+        <div id="logo-container-right">
+            <img src="images/Phenom Forever Logo Main.PNG" alt="Logo" width="80" height="80">
+        </div>
+    </header>
+
+    <main>
         <!-- Buttons Container -->
         <div class="buttons-container">
             <!-- Button for Artists Page -->
             <a class="button" href="artists.html">Artists</a>
-            
+
             <!-- Button for News Page -->
             <a class="button" href="news.html">News</a>
         </div>
     </main>
-</body></html>
+
+    <!-- Social Media Links -->
+    <div id="social-media-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <!-- Add more social media links as needed -->
+    </div>
+
+</body>
+
+</html>
