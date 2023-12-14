@@ -1,3 +1,20 @@
+# Design and Sandbox
+**Key**
+
+<pre>
+    <!DOCTYPE html>: Declares the document type and version of HTML.
+    <html lang="en">: Defines the root element of the HTML document with the language attribute set to English.
+    <head>: Contains meta-information about the HTML document, such as character set, viewport settings, and the title of the page.
+    <meta charset="UTF-8">: Sets the character encoding to UTF-8.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: Configures the viewport for better responsiveness on various devices.
+    <title>Your Website Title</title>: Sets the title of the web page.
+    <style>: Contains internal CSS styles for the document.
+    body: Defines styles for the body of the document.
+    header, main, and footer: Structural elements for the header, main content area, and footer of the web page.
+    <h1>, <h2>, <p>: Heading and paragraph elements for text content. 
+<pre>
+
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,3 +159,4 @@
 
 </body>
 </html>
+<pre>
